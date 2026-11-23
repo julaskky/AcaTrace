@@ -1,0 +1,386 @@
+.supervisor-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f6f8fb;
+}
+
+.supervisor-sidebar {
+  width: 250px;
+  background: #101828;
+  padding: 28px 18px;
+  color: white;
+}
+
+.supervisor-logo {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 0 12px;
+  margin-bottom: 40px;
+}
+
+.supervisor-logo span {
+  color: #4f8cff;
+}
+
+.supervisor-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.supervisor-sidebar nav a {
+  color: #aeb8c8;
+  text-decoration: none;
+  padding: 13px 14px;
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.supervisor-sidebar nav a:hover,
+.supervisor-sidebar nav a.active {
+  background: #1d2939;
+  color: white;
+}
+
+.supervisor-main {
+  flex: 1;
+  padding: 45px;
+  max-width: 1500px;
+}
+
+.supervisor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.supervisor-header p {
+  color: #4f8cff;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 7px;
+}
+
+.supervisor-header h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 34px;
+}
+
+.supervisor-header span {
+  display: block;
+  color: #667085;
+  margin-top: 8px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.primary-supervisor-btn,
+.secondary-supervisor-btn {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-supervisor-btn {
+  background: #4f8cff;
+  color: white;
+}
+
+.secondary-supervisor-btn {
+  background: #eaf2ff;
+  color: #175cd3;
+}
+
+.supervisor-message,
+.supervisor-error {
+  padding: 14px 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.supervisor-message {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+.supervisor-error {
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.supervisor-form-card,
+.assignment-card,
+.supervisor-table-card {
+  background: white;
+  border: 1px solid #e4e7ec;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 25px rgba(16, 24, 40, 0.04);
+}
+
+.form-heading,
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.form-heading h2,
+.table-header h2 {
+  margin: 0;
+  color: #172033;
+}
+
+.form-heading p,
+.table-header p {
+  color: #667085;
+  margin: 7px 0 0;
+}
+
+.close-btn {
+  border: none;
+  background: #f2f4f7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.supervisor-form-grid,
+.assignment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.supervisor-form-grid > div,
+.assignment-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.full-supervisor-field {
+  grid-column: 1 / -1;
+}
+
+.supervisor-form-grid label,
+.assignment-grid label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #344054;
+}
+
+.supervisor-form-grid input,
+.supervisor-form-grid select,
+.assignment-grid select {
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+  padding: 12px;
+  font: inherit;
+  outline: none;
+}
+
+.supervisor-form-grid input:focus,
+.supervisor-form-grid select:focus,
+.assignment-grid select:focus {
+  border-color: #4f8cff;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.cancel-supervisor-btn,
+.save-supervisor-btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel-supervisor-btn {
+  background: #f2f4f7;
+  color: #344054;
+}
+
+.save-supervisor-btn {
+  background: #4f8cff;
+  color: white;
+}
+
+.supervisor-table-wrapper {
+  overflow-x: auto;
+}
+
+.supervisor-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.supervisor-table-wrapper th {
+  text-align: left;
+  padding: 13px;
+  background: #f9fafb;
+  color: #667085;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.supervisor-table-wrapper td {
+  padding: 17px 13px;
+  border-bottom: 1px solid #eaecf0;
+  color: #475467;
+  font-size: 14px;
+}
+
+.supervisor-table-wrapper td strong {
+  display: block;
+  color: #172033;
+}
+
+.supervisor-table-wrapper td small {
+  display: block;
+  margin-top: 4px;
+  color: #98a2b3;
+}
+
+.project-count {
+  display: inline-flex;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #eff8ff;
+  color: #175cd3;
+  font-weight: 700;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.status-pill.active {
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+.status-pill.inactive {
+  background: #f2f4f7;
+  color: #667085;
+}
+
+.status-pill.suspended {
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.table-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.table-actions button {
+  border: none;
+  background: #f2f4f7;
+  color: #344054;
+  padding: 7px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.table-actions .deactivate-btn {
+  color: #b42318;
+}
+
+.empty-supervisors {
+  text-align: center;
+  padding: 60px 20px;
+  color: #667085;
+}
+
+.empty-supervisors div {
+  font-size: 35px;
+  color: #4f8cff;
+}
+
+.empty-supervisors h3 {
+  color: #172033;
+}
+
+.supervisor-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 850px) {
+  .supervisor-sidebar {
+    width: 210px;
+  }
+
+  .supervisor-main {
+    padding: 30px 20px;
+  }
+
+  .supervisor-header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .supervisor-page {
+    display: block;
+  }
+
+  .supervisor-sidebar {
+    width: auto;
+  }
+
+  .supervisor-form-grid,
+  .assignment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-supervisor-field {
+    grid-column: auto;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+}

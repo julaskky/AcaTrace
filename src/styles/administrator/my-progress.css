@@ -1,0 +1,442 @@
+.my-progress-page {
+  min-height: 100vh;
+  padding: 36px;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.my-progress-header,
+.my-progress-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.my-progress-header {
+  margin-bottom: 28px;
+}
+
+.my-progress-header h1 {
+  margin: 16px 0 8px;
+  font-size: 30px;
+}
+
+.my-progress-header p,
+.my-progress-section-heading p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.my-progress-back {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.my-progress-back:hover,
+.my-progress-section-heading > a:hover,
+.my-progress-project-link:hover {
+  text-decoration: underline;
+}
+
+.my-progress-primary-button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #1e40af;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.my-progress-primary-button:hover {
+  background: #1d4ed8;
+}
+
+.my-progress-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 30px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+}
+
+.my-progress-overview-text {
+  flex: 1;
+  max-width: 760px;
+}
+
+.my-progress-eyebrow {
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.my-progress-overview h2 {
+  margin: 12px 0 8px;
+  font-size: 28px;
+}
+
+.my-progress-overview p {
+  margin: 0 0 20px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.my-progress-overview-icon {
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #eff6ff;
+  font-size: 44px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e2e8f0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #2563eb;
+  transition: width 0.3s ease;
+}
+
+.my-progress-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.my-progress-stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.my-progress-stat-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #eff6ff;
+  font-size: 23px;
+}
+
+.my-progress-stat p {
+  margin: 0 0 8px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.my-progress-stat h3 {
+  margin: 0;
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+
+.my-progress-section {
+  margin-bottom: 36px;
+}
+
+.my-progress-section-heading {
+  margin-bottom: 18px;
+}
+
+.my-progress-section-heading h2 {
+  margin: 0 0 7px;
+  font-size: 21px;
+}
+
+.my-progress-section-heading > a {
+  color: #1d4ed8;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.my-progress-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.my-progress-project-card {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.my-progress-project-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.my-progress-project-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #eff6ff;
+  font-size: 23px;
+}
+
+.my-progress-status {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.my-progress-status.status-completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.my-progress-status.status-active,
+.my-progress-status.status-in-progress {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.my-progress-project-card h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.my-progress-project-area {
+  margin: 0 0 22px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.my-progress-project-percentage {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.my-progress-project-percentage span {
+  color: #64748b;
+}
+
+.my-progress-project-percentage strong {
+  color: #1d4ed8;
+}
+
+.my-progress-project-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.my-progress-project-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 13px;
+  border-radius: 9px;
+  background: #f8fafc;
+}
+
+.my-progress-project-details span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.my-progress-project-details strong {
+  font-size: 17px;
+}
+
+.my-progress-due-date {
+  margin: 18px 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.my-progress-project-link {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.my-progress-empty,
+.my-progress-message,
+.my-progress-error {
+  padding: 35px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  text-align: center;
+}
+
+.my-progress-empty > span {
+  font-size: 38px;
+}
+
+.my-progress-empty h3,
+.my-progress-error h2 {
+  margin: 12px 0;
+}
+
+.my-progress-empty p,
+.my-progress-error p {
+  margin: 0 0 18px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.my-progress-error button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 7px;
+  background: #1e40af;
+  color: #fff;
+  cursor: pointer;
+}
+
+.my-progress-error a {
+  color: #1d4ed8;
+}
+
+.my-progress-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.my-progress-actions > a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+}
+
+.my-progress-actions > a:hover {
+  border-color: #93c5fd;
+  background: #f8fbff;
+}
+
+.my-progress-actions > a > span:first-child {
+  font-size: 25px;
+}
+
+.my-progress-actions > a > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.my-progress-actions strong {
+  font-size: 14px;
+}
+
+.my-progress-actions p {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.my-progress-action-arrow {
+  color: #1d4ed8;
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .my-progress-page {
+    padding: 24px;
+  }
+
+  .my-progress-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .my-progress-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .my-progress-page {
+    padding: 16px;
+  }
+
+  .my-progress-header,
+  .my-progress-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .my-progress-header {
+    gap: 16px;
+  }
+
+  .my-progress-overview {
+    padding: 22px;
+  }
+
+  .my-progress-overview-icon {
+    display: none;
+  }
+
+  .my-progress-overview h2 {
+    font-size: 24px;
+  }
+
+  .my-progress-stats,
+  .my-progress-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .my-progress-stat {
+    padding: 18px;
+  }
+
+  .my-progress-section-heading > a {
+    white-space: normal;
+  }
+}
